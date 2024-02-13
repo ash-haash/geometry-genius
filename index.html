@@ -88,6 +88,29 @@
                         </div>
                     </div>
                 </div>
+                <!-- Rhombus card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>1</sub></p>
+                        <div>
+                            <input id="rhombus-d1" class="w-20 text-2xl p-2 rounded-sm" type="text"
+                                placeholder="d1-length">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input id="rhombus-d2" class="w-20 text-2xl p-2 rounded-sm" type="text"
+                                placeholder="d2-length">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="rhombus-area"> 0</span><span> cm<sup>2</sup></span>
+                            </p>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <!-- area calculation result container -->
@@ -99,6 +122,7 @@
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/parallelogram-calculate.js"></script>
+    <script src="scripts/calculate-rhombus.js"></script>
 </body>
 
 </html>
